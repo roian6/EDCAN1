@@ -18,4 +18,6 @@
     <color name="materialGreen">#1abc9c</color>
     <color name="materialYellow">#f1c40f</color>
     <color name="materialRed">#e74c32</color>
+
+    <color name="tossBlue">#3182f6</color>
 </resources>
