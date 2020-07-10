@@ -134,7 +134,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:fontFamily="@font/apple_sd_gothic_neo_r"
-            android:text="정찬효"
+            android:text="토스머니"
             android:textColor="@color/materialGray7"
             android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/txt_main_account_money"
@@ -150,19 +150,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/apple_sd_gothic_neo_h"
-            android:text="내 정보 보기"
+            android:text="100원"
             app:layout_constraintBottom_toBottomOf="@+id/img_main_bank1"
             app:layout_constraintStart_toStartOf="@+id/txt_main_account_name"
             app:layout_constraintTop_toBottomOf="@+id/txt_main_account_name" />
 
         <Button
+            android:minHeight="0dp"
+            android:minWidth="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_box"
-            android:backgroundTint="@color/tossBlue"
+            android:backgroundTint="@color/materialGray2"
             android:fontFamily="@font/apple_sd_gothic_neo_h"
             android:text="송금"
-            android:textColor="@android:color/white"
+            android:textColor="@color/materialGray7"
             app:layout_constraintBottom_toBottomOf="@+id/img_main_bank1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/img_main_bank1" />
