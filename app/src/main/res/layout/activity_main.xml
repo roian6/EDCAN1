@@ -7,9 +7,10 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:padding="24dp"
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -24,37 +25,117 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:textSize="18sp"
-            android:textColor="@color/materialDarkBlack"
-            android:layout_marginStart="24dp"
-            app:layout_constraintVertical_chainStyle="packed"
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/apple_sd_gothic_neo_h"
             android:text="정찬효"
+            android:textColor="@color/materialDarkBlack"
+            android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/textView2"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
             android:text="내 정보 보기"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"
             app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <Button
-            android:textColor="@android:color/white"
-            android:backgroundTint="@color/tossBlue"
-            android:background="@drawable/round_box"
-            android:text="송금"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/round_box"
+            android:backgroundTint="@color/tossBlue"
+            android:fontFamily="@font/apple_sd_gothic_neo_h"
+            android:text="송금"
+            android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/materialGray4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    (뷰 타입)_(위치)_(기능)-->
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_main_bank1"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_main_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/apple_sd_gothic_neo_h"
+            android:text="정찬효"
+            android:textColor="@color/materialDarkBlack"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_main_account_money"
+            app:layout_constraintStart_toEndOf="@+id/img_main_bank1"
+            app:layout_constraintTop_toTopOf="@+id/img_main_bank1"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/txt_main_account_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
+            android:text="내 정보 보기"
+            app:layout_constraintBottom_toBottomOf="@+id/img_main_bank1"
+            app:layout_constraintStart_toStartOf="@+id/txt_main_account_name"
+            app:layout_constraintTop_toBottomOf="@+id/txt_main_account_name" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_box"
+            android:backgroundTint="@color/tossBlue"
+            android:fontFamily="@font/apple_sd_gothic_neo_h"
+            android:text="송금"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/materialGray4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_main_bank1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
