@@ -119,12 +119,10 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/img_main_bank1"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
             android:layout_marginTop="24dp"
-            android:src="@drawable/ic_baseline_favorite_24"
-            android:tint="@android:color/white"
-            app:civ_circle_background_color="@color/tossBlue"
+            android:src="@drawable/toss2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_main_account_title" />
 
@@ -143,7 +141,7 @@
             app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="2dp"
             android:textColor="@color/materialDarkBlack"
             android:textSize="16sp"
             android:id="@+id/txt_main_account_money"
@@ -158,6 +156,8 @@
         <Button
             android:minHeight="0dp"
             android:minWidth="0dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_box"
@@ -169,15 +169,67 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/img_main_bank1" />
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="24dp"
+            android:id="@+id/img_main_bank2"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:src="@drawable/toss2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_main_bank1" />
+
+        <TextView
+            android:id="@+id/txt_main_account_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/apple_sd_gothic_neo_r"
+            android:text="탈선린 예금통장"
+            android:textColor="@color/materialGray7"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_main_account_money2"
+            app:layout_constraintStart_toEndOf="@+id/img_main_bank2"
+            app:layout_constraintTop_toTopOf="@+id/img_main_bank2"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:textColor="@color/materialDarkBlack"
+            android:textSize="16sp"
+            android:id="@+id/txt_main_account_money2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/apple_sd_gothic_neo_h"
+            android:text="100000원"
+            app:layout_constraintBottom_toBottomOf="@+id/img_main_bank2"
+            app:layout_constraintStart_toStartOf="@+id/txt_main_account_name2"
+            app:layout_constraintTop_toBottomOf="@+id/txt_main_account_name2" />
+
+        <Button
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_box"
+            android:backgroundTint="@color/materialGray2"
+            android:fontFamily="@font/apple_sd_gothic_neo_h"
+            android:text="송금"
+            android:textColor="@color/materialGray7"
+            app:layout_constraintBottom_toBottomOf="@+id/img_main_bank2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_main_bank2" />
+
         <View
+            android:layout_marginTop="24dp"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="24dp"
             android:background="@color/materialGray4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img_main_bank1" />
+            app:layout_constraintTop_toBottomOf="@+id/img_main_bank2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
